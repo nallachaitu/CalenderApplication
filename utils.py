@@ -54,7 +54,3 @@ def new_message_email(sender, instance, signal,
                 'site_url': '%s://%s' % (default_protocol, current_domain),
                 'message': instance,
             })
-            if instance.recipient.email != "":
-                send_mail(subject, message, settings.DEFAULT_FROM_EMAIL,
-                    [instance.recipient.email,])
-        
