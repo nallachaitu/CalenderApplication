@@ -57,6 +57,4 @@ def new_message_email(sender, instance, signal,
             if instance.recipient.email != "":
                 send_mail(subject, message, settings.DEFAULT_FROM_EMAIL,
                     [instance.recipient.email,])
-        except Exception, e:
-            #print e
-            pass #fail silently
+        
