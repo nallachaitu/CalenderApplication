@@ -51,5 +51,4 @@ def new_message_email(sender, instance, signal,
             subject = subject_prefix % {'subject': instance.subject}
             message = render_to_string(template_name, {
                 'site_url': '%s://%s' % (default_protocol, current_domain),
-                'message': instance,
-            })
+                            })
