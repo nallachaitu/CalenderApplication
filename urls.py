@@ -10,5 +10,4 @@ urlpatterns = patterns('',
     url(r'^compose/$', compose, name='messages_compose'),
     url(r'^compose/(?P<recipient>[\+\w]+)/$', compose, name='messages_compose_to'),
     url(r'^reply/(?P<message_id>[\d]+)/$', reply, name='messages_reply'),
-    url(r'^view/(?P<message_id>[\d]+)/$', view, name='messages_detail'),
         )
