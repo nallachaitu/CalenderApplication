@@ -9,5 +9,5 @@ urlpatterns = patterns('',
     url(r'^outbox/$', outbox, name='messages_outbox'),
     url(r'^compose/$', compose, name='messages_compose'),
     url(r'^compose/(?P<recipient>[\+\w]+)/$', compose, name='messages_compose_to'),
-    url(r'^reply/(?P<message_id>[\d]+)/$', reply, name='messages_reply'),
+   
         )
