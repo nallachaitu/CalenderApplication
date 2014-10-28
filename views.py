@@ -46,10 +46,6 @@ def outbox(request, template_name='django_messages/outbox.html', **kw):
     return message_list(request, queryset, **kw)
 
 
-@login_required
-def trash(request, template_name='django_messages/trash.html', **kw):
-    
-        return message_list(request, queryset, **kw)
 
 
 @login_required
