@@ -48,9 +48,7 @@ def outbox(request, template_name='django_messages/outbox.html', **kw):
 
 @login_required
 def trash(request, template_name='django_messages/trash.html', **kw):
-    """
-    Displays a list of deleted messages.
-    """
+    
     kw['template_name'] = template_name
     queryset = Message.trash.for_user(request.user)
     return message_list(request, queryset, **kw)
