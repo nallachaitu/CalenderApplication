@@ -31,10 +31,7 @@ def message_list(request, queryset, paginate_by=25,
 
 @login_required
 def inbox(request, template_name='django_messages/inbox.html', **kw):
-    """
-    Displays a list of received messages for the current user.
     
-
 
 @login_required
 def outbox(request, template_name='django_messages/outbox.html', **kw):
