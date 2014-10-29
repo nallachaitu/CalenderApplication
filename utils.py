@@ -35,11 +35,7 @@ def new_message_email(sender, instance, signal,
         template_name="django_messages/new_message.html",
         default_protocol=None,
         *args, **kwargs):
-    """
-    This function sends an email and is called via Django's signal framework.
-    Optional arguments:
-        ``template_name``: the template to use
-        ``subject_prefix``: prefix for the email subject.
+            ``subject_prefix``: prefix for the email subject.
         ``default_protocol``: default protocol in site URL passed to template
     """
     if default_protocol is None:
