@@ -35,9 +35,7 @@ def new_message_email(sender, instance, signal,
         template_name="django_messages/new_message.html",
         default_protocol=None,
         *args, **kwargs):
-            ``subject_prefix``: prefix for the email subject.
-        ``default_protocol``: default protocol in site URL passed to template
-    """
+                """
     if default_protocol is None:
         default_protocol = getattr(settings, 'DEFAULT_HTTP_PROTOCOL', 'http')
 
